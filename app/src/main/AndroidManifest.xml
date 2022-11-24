@@ -13,27 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShoeStore"
         tools:targetApi="31">
-        <activity
-            android:name=".ShoeDetail"
-            android:exported="false" />
-        <activity
-            android:name=".ShoeList"
-            android:exported="false" />
-        <activity
-            android:name=".Instruction"
-            android:exported="false" />
-        <activity
-            android:name=".Welcome"
-            android:exported="false" />
-        <activity
-            android:name=".Instruction"
-            android:exported="false" />
-        <activity
-            android:name=".Welcome"
-            android:exported="false" />
-        <activity
-            android:name=".Login"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

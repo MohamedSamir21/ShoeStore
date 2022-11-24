@@ -9,9 +9,13 @@
         <entry key="..\:/Users/mohmed samer/MyApplications/ShoeStore/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/mohmed samer/MyApplications/ShoeStore/app/src/main/res/layout/activity_shoe_details.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/mohmed samer/MyApplications/ShoeStore/app/src/main/res/layout/activity_shoe_listing.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/mohmed samer/MyApplications/ShoeStore/app/src/main/res/layout/custom_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/mohmed samer/MyApplications/ShoeStore/app/src/main/res/layout/fragment_instruction.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/mohmed samer/MyApplications/ShoeStore/app/src/main/res/layout/fragment_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mohmed samer/MyApplications/ShoeStore/app/src/main/res/layout/fragment_shoe_detail.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mohmed samer/MyApplications/ShoeStore/app/src/main/res/layout/fragment_shoe_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/mohmed samer/MyApplications/ShoeStore/app/src/main/res/layout/fragment_welcome.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mohmed samer/MyApplications/ShoeStore/app/src/main/res/menu/navdrawer_menu.xml" value="0.24010416666666667" />
       </map>
     </option>
   </component>

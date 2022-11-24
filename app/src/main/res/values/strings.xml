@@ -4,4 +4,16 @@
     <string name="password">Password</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="singup">SginUp</string>
+    <string name="welcome_to_the_shoe_store">Welcome to the shoe Store !!</string>
+    <string name="welcome_details">In our shop, you\'ll find all the kinds of shoes of all marks and brands. We are sure that you\'ll find the shoe that suits your feet !!</string>
+    <string name="next">Next</string>
+    <string name="instructions">Instructions</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="company">Company</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="logout">Logout</string>
+
 </resources>
