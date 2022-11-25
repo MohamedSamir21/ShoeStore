@@ -13,24 +13,23 @@ class ShoeViewModel: ViewModel() {
     val shoes: LiveData<ItemDetail>
         get() = _shoes
 
-     var shoesList: MutableList<ItemDetail>?
-     val shoeListw: MutableList<ItemDetail>?
-        get() = shoesList
+     private var _shoesList: MutableList<ItemDetail>?
+     val shoesList: MutableList<ItemDetail>?
+        get() = _shoesList
 
      lateinit var itemDetail: ItemDetail
 
     init {
-        shoesList = null
+        _shoesList = null
         var itemDetail =  ItemDetail()
-        shoesList = mutableListOf()
+        _shoesList = mutableListOf()
     }
+
     fun add(name: String, company: String, size: String, description: String){
         itemDetail = ItemDetail(name, company, size, description)
         _shoes.value = itemDetail
 
-        shoesList?.add(itemDetail)
-
-        Log.i("ShoeViewModel", "{${shoesList}}")
+        _shoesList?.add(itemDetail)
     }
 
 }

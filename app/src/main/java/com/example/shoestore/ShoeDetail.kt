@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
@@ -20,7 +21,6 @@ class ShoeDetail : Fragment() {
 
         val binding: FragmentShoeDetailBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_shoe_detail, container, false)
-        // Get the ShoeViewModel
 
         binding.saveButton.setOnClickListener {
 
@@ -32,6 +32,7 @@ class ShoeDetail : Fragment() {
             shoeViewModel.add(name, company, size, description)
 
             findNavController().navigate(R.id.action_shoeDetail_to_shoeList)
+            Toast.makeText(requireContext(), "New item has been added !!", Toast.LENGTH_SHORT).show()
         }
         binding.cancelButton.setOnClickListener {
             findNavController().navigate(R.id.action_shoeDetail_to_shoeList)

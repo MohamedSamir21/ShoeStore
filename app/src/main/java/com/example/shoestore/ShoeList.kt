@@ -31,23 +31,22 @@ class ShoeList : Fragment() {
 
         shoeViewModel.shoes.observe(viewLifecycleOwner, Observer {
             if (it != null){
-                for (index in 0 .. (shoeViewModel.shoeListw!!.size)-1){
+                for (index in 0 .. (shoeViewModel.shoesList!!.size)-1){
 
                     val linearLayout = binding.linearLayout
                     val customView = layoutInflater.inflate(R.layout.custom_item, null, false)
 
 
-                    val shoeNameTextView = customView.findViewById<TextView>(R.id.shoeNameTextView)
-                    shoeNameTextView.text = "Name: " + shoeViewModel.shoeListw?.elementAt(index)?.name.toString()
+
 
                     val companyTextView = customView.findViewById<TextView>(R.id.companyTextView)
-                    companyTextView.text = "Company: " + shoeViewModel.shoeListw?.elementAt(index)?.company.toString()
+                    companyTextView.text = "Company: " + shoeViewModel.shoesList?.elementAt(index)?.company.toString()
 
                     val shoeSizeTextView = customView.findViewById<TextView>(R.id.shoeSizeTextView)
-                    shoeSizeTextView.text = "Size: " + shoeViewModel.shoeListw?.elementAt(index)?.size.toString()
+                    shoeSizeTextView.text = "Size: " + shoeViewModel.shoesList?.elementAt(index)?.size.toString()
 
                     val shoeDescriptionTextView = customView.findViewById<TextView>(R.id.shoeDescriptionTextView)
-                    shoeDescriptionTextView.text = "Description: " + shoeViewModel.shoeListw?.elementAt(index)?.description.toString()
+                    shoeDescriptionTextView.text = "Description: " + shoeViewModel.shoesList?.elementAt(index)?.description.toString()
 
                     customView.setLayoutParams(LinearLayout.LayoutParams(
                         LinearLayout.LayoutParams.MATCH_PARENT,
