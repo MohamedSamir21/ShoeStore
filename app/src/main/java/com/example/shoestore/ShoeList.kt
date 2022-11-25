@@ -1,5 +1,6 @@
 package com.example.shoestore
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -11,6 +12,9 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.example.shoestore.databinding.FragmentShoeListBinding
 import android.support.v4.*
+import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AppCompatActivity
+
 class ShoeList : Fragment() {
     private lateinit var binding: FragmentShoeListBinding
     private val shoeViewModel: ShoeViewModel by activityViewModels()
@@ -25,9 +29,22 @@ class ShoeList : Fragment() {
 
         setHasOptionsMenu(true)
 
+        val activity = activity as AppCompatActivity
+        activity.supportActionBar!!.setDisplayHomeAsUpEnabled(false)
+
         binding.addFAB.setOnClickListener{
             findNavController().navigate(R.id.action_shoeList_to_shoeDetail)
         }
+
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                val i = Intent()
+                i.action = Intent.ACTION_MAIN
+                i.addCategory(Intent.CATEGORY_HOME)
+                startActivity(i)
+            }
+        })
+
 
         shoeViewModel.shoes.observe(viewLifecycleOwner, Observer {
             if (it != null){
@@ -71,4 +88,7 @@ class ShoeList : Fragment() {
         }
         return true
     }
+
+
+
 }
