@@ -55,6 +55,8 @@ class ShoeList : Fragment() {
 
 
 
+                    val nameTextView = customView.findViewById<TextView>(R.id.shoeNameTextView)
+                    nameTextView.text = "Name: " + shoeViewModel.shoesList?.elementAt(index)?.name.toString()
 
                     val companyTextView = customView.findViewById<TextView>(R.id.companyTextView)
                     companyTextView.text = "Company: " + shoeViewModel.shoesList?.elementAt(index)?.company.toString()
