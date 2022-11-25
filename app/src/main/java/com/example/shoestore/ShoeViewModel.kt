@@ -21,7 +21,6 @@ class ShoeViewModel: ViewModel() {
 
     init {
         _shoesList = null
-        var itemDetail =  ItemDetail()
         _shoesList = mutableListOf()
     }
 

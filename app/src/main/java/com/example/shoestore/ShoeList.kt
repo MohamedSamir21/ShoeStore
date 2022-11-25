@@ -14,6 +14,7 @@ import com.example.shoestore.databinding.FragmentShoeListBinding
 import android.support.v4.*
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.ui.NavigationUI
 
 class ShoeList : Fragment() {
     private lateinit var binding: FragmentShoeListBinding
@@ -53,8 +54,6 @@ class ShoeList : Fragment() {
                     val linearLayout = binding.linearLayout
                     val customView = layoutInflater.inflate(R.layout.custom_item, null, false)
 
-
-
                     val nameTextView = customView.findViewById<TextView>(R.id.shoeNameTextView)
                     nameTextView.text = "Name: " + shoeViewModel.shoesList?.elementAt(index)?.name.toString()
 
@@ -74,6 +73,7 @@ class ShoeList : Fragment() {
                     linearLayout.addView(customView);
 
                 }
+
             }
 
         })
