@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/login"
         android:name="com.example.shoestore.Login"
-        android:label="fragment_login"
+        android:label="@string/fragment_login_title"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_login_to_welcome"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/welcome"
         android:name="com.example.shoestore.Welcome"
-        android:label="fragment_welcome"
+        android:label="@string/fragment_welcome_title"
         tools:layout="@layout/fragment_welcome" >
         <action
             android:id="@+id/action_welcome_to_instruction"
@@ -28,7 +28,7 @@
     <fragment
         android:id="@+id/instruction"
         android:name="com.example.shoestore.Instruction"
-        android:label="fragment_instruction"
+        android:label="@string/fragment_instructions_title"
         tools:layout="@layout/fragment_instruction" >
         <action
             android:id="@+id/action_instruction_to_shoeList"
@@ -39,7 +39,7 @@
     <fragment
         android:id="@+id/shoeList"
         android:name="com.example.shoestore.ShoeList"
-        android:label="fragment_shoe_list"
+        android:label="@string/fragment_shoes_list_title"
         tools:layout="@layout/fragment_shoe_list" >
         <action
             android:id="@+id/action_shoeList_to_shoeDetail"
@@ -52,7 +52,7 @@
     <fragment
         android:id="@+id/shoeDetail"
         android:name="com.example.shoestore.ShoeDetail"
-        android:label="ShoeDetail" >
+        android:label="fragment_shoe_details_title">
         <action
             android:id="@+id/action_shoeDetail_to_shoeList"
             app:destination="@id/shoeList"

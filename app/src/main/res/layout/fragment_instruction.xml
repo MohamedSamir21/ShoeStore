@@ -14,32 +14,35 @@
             android:id="@+id/instructionsTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="220dp"
             android:text="@string/instructions"
-            android:textSize="@dimen/text_size"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.262"
-            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/green"
+            android:background="@color/gray"
+            android:padding="5dp"
+            app:layout_constraintStart_toEndOf="@+id/instructionsImageView"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/instructionsImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:src="@drawable/instruction"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.25"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="180dp"
+            android:src="@drawable/im_guide"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/instructionsTextView" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/instructionsContentTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="68dp"
-            android:text="You can add new item using plus sign + \n After choosing plus sign + , you can customize your new item (its name, size company and description) \n Enjoy the app and explore it !!"
-            android:textSize="@dimen/text_size"
+            android:text="@string/guide_message"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/light_purple"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.257"
             app:layout_constraintStart_toStartOf="parent"
@@ -49,11 +52,9 @@
             android:id="@+id/nextInstructionsButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
+            android:layout_marginBottom="50dp"
             android:text="@string/next"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.972"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/instructionsContentTextView" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

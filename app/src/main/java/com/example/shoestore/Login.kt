@@ -7,19 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-import com.example.shoestore.R
 import com.example.shoestore.databinding.FragmentLoginBinding
 
 
 class Login : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                                savedInstanceState: Bundle?): View? {
+                                savedInstanceState: Bundle?): View {
         val binding: FragmentLoginBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_login, container,false)
 
