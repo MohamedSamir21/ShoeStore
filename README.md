@@ -14,7 +14,7 @@ This project was created based on educational purposes according to [Advanced An
 <br>
 <hr>
 
-## Skills
+## Skills Acquired from this Project
 <ul>
   <li>ViewModel</li>
   <li>LiveData</li>
