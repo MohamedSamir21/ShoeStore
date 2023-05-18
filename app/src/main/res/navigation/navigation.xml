@@ -52,7 +52,7 @@
     <fragment
         android:id="@+id/shoeDetail"
         android:name="com.example.shoestore.ShoeDetail"
-        android:label="fragment_shoe_details_title">
+        android:label="@string/fragment_shoe_details_title">
         <action
             android:id="@+id/action_shoeDetail_to_shoeList"
             app:destination="@id/shoeList"

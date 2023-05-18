@@ -29,4 +29,5 @@
     <string name="fragment_welcome_title">Welcome</string>
     <string name="fragment_instructions_title">Instructions</string>
     <string name="fragment_shoes_list_title">Shoes List</string>
+    <string name="fragment_shoe_details_title">Shoe Details</string>
 </resources>
