@@ -10,7 +10,7 @@
  </ol>
  
 ### Note:
-This project was created based on educational purposes according to [Advanced Android Kotlin Development Nanodgree](https://www.udacity.com/course/android-kotlin-developer-nanodegree--nd940).
+This project was created based on educational purposes according to [Advanced Android Kotlin Development Nanodegree](https://www.udacity.com/course/android-kotlin-developer-nanodegree--nd940).
 <br>
 <hr>
 
